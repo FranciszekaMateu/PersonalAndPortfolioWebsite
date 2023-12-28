@@ -1,0 +1,24 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Card from '../components/Card.astro';
+import BGTitle from '../components/BGTitle.astro';
+import Badge from '../components/Badge.astro';
+---
+
+<Layout title="Welcome to Astro.">
+	<main>
+		<section class="w-full lg:w-[740px] mx-auto py-44">
+			<img class="rounded-full w-12 h-12 m-5" 
+    src="https://avatars.githubusercontent.com/u/109363728?s=400&u=211c996c6f56a6e743c51c8716d6e515a50fddf9&v=4" 
+    alt="Francisco photo">
+			<h1 class="text-5xl text-white font-bold flex flex-row  gap-x-4 pb-4">
+				Hola, soy <div class="flex justify-center items-center">
+						<BGTitle> Francisco</BGTitle>
+					</div>
+ 			</h1>
+			<h2 class="text-2xl opacity-80 text-wrap">Estudiante de ingenieria y Desarollador Web de Uruguay 🇺🇾 </h2>
+		</section>
+	</main>
+</Layout>
+
+
