@@ -3,22 +3,51 @@ import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
 import BGTitle from '../components/BGTitle.astro';
 import Badge from '../components/Badge.astro';
+import SocialPill from '../components/SocialPill.astro';
+import LinkedinIcon from '../components/icons/LinkedinIcon.astro';
+import GitHubIcon from '../components/icons/GitHubIcon.astro';
+import MailIcon from '../components/icons/MailIcon.astro';
+import Education from '../components/Education.astro';
 ---
 
-<Layout title="Welcome to Astro.">
-	<main>
-		<section class="w-full lg:w-[740px] mx-auto py-44">
-			<img class="rounded-full w-12 h-12 m-5" 
-    src="https://avatars.githubusercontent.com/u/109363728?s=400&u=211c996c6f56a6e743c51c8716d6e515a50fddf9&v=4" 
-    alt="Francisco photo">
-			<h1 class="text-5xl text-white font-bold flex flex-row  gap-x-4 pb-4">
+<Layout title="Portfolio Personal de Francisco- Desarollador y programador web">
+	<main class="px-4">
+		<section id="top" class="w-full mx-auto lg:w-[740px] pb-24 py-30 md:py-30">
+			<img class="rounded-full size-13 w-41 h-41 mb-20 mx-auto" 
+    		src="https://avatars.githubusercontent.com/u/109363728?s=400&u=211c996c6f56a6e743c51c8716d6e515a50fddf9&v=4" 
+    		alt="Francisco photo">
+			<h1 class="text-3xl lg:text-7xl md:text-4xl text-white font-bold flex flex-row  gap-x-4 
+			pb-6 lg:pb-10 mx-auto">
 				Hola, soy <div class="flex justify-center items-center">
 						<BGTitle> Francisco</BGTitle>
 					</div>
  			</h1>
-			<h2 class="text-2xl opacity-80 text-wrap">
-				Estudiante de ingenieria y Desarollador Web<br> de Uruguay 🇺🇾
+			<h2 class="texl-xl lg:text-2xl  text-wrap opacity-85 max-w-[700px]">
+				<span class="text-green-300 text-3xl ">Estudiante de ingenieria </span> y <span class="text-green-300 text-3xl ">Desarollador Web</span><br> de Uruguay 🇺🇾
 			</h2>
+			<nav class="flex flex-wrap  my-4 gap-x-4">
+				<SocialPill  href="https://www.linkedin.com/in/franciscoescobar-b17b0825b">
+					<LinkedinIcon />
+					Linkedin
+				</SocialPill>
+				<SocialPill   href="https://github.com/FranciszekaMateu">
+					<GitHubIcon />
+					Github
+				</SocialPill>
+				
+				<SocialPill   href="https://github.com/FranciszekaMateu">
+					<MailIcon />
+					franciszekamataio@gmail.com
+				</SocialPill>
+			</nav>
+				
+			</ul>
+		</section>
+		
+		<section id="educacion" class="w-full mx-auto lg:w-[740px] pb-24">
+			<BGTitle class="my-10  text-4xl w-full text-center">Educacion</BGTitle>
+
+			<Education />
 		</section>
 	</main>
 </Layout>
