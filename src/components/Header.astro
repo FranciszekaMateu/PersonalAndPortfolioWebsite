@@ -3,14 +3,14 @@
 ---
 import HeaderBtn from "./HeaderBtn.astro";
 ---
-<header class="flex  justify-center  items-center w-full  xl:w-[1120px] mx-auto py-10 " > 
+<header class="flex  justify-center  items-center w-full  xl:w-[1120px] mx-auto py-10 my-5" > 
     
-    <nav class="flex flex-row gap-x-10 mx-10  opacity-80">
+    <nav class="flex flex-row gap-x-5 md:gap-x-10 mx-10  opacity-80">
         <HeaderBtn route="#top" text="Home" />
-        <HeaderBtn route="/about" text="Sobre mi" />
+        <HeaderBtn route="#sobremi" text="Sobre mi" />
         <HeaderBtn route="#educacion" text="Educacíon" />
-        <HeaderBtn route="/Proyects" text="Proyects" />
-        <HeaderBtn route="/contact" text="Contact" />
+        <HeaderBtn route="#proyectos" text="Proyectos" />
+        <HeaderBtn route="#contacto" text="Contacto" />
         
     </nav>
 </header>
