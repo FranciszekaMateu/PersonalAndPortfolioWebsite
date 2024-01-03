@@ -14,6 +14,12 @@ const PROYECTS = [
         link:"",
         github:"",
         image:"https://miro.medium.com/v2/resize:fit:1400/1*eWbNRY_UnGFJC5YqcqBSwA.jpeg"
+    },
+    {
+        title: "TrabajoUy",
+        desciption:"This is a job search Fullstack web sitie made with java",
+        github:"",
+        image:"https://www.trabajando.com.uy/images/empresa"
     }
 ]
 ---
@@ -22,7 +28,7 @@ const PROYECTS = [
     PROYECTS.map((proyect) => {
         return(
         <article class="flex flex-col border border-green-800 proyect p-4 rounded-2xl">
-            <h4 class="text-5xl m-1 mb-2 text-green-600">{proyect.title}</h4>
+            <h4 class="md:text-4xl m-1 mb-2 text-green-600">{proyect.title}</h4>
             <p class="text-xl m-2 mb-4">{proyect.desciption}</p>
             <a href={proyect.github} class=" flex items-center text-2xl font-bold m-2  rounded-full gap-x-1 mb-10
             transition-transform  duration-300 text-green-300 hover:scale-105">
